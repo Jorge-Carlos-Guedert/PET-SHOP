@@ -1,0 +1,27 @@
+.content {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+.card {
+  align-items: center;
+  size: 100vh;
+}
+
+.cardheader {
+  text-align: center;
+  font-size: medium;
+}
+
+.cardsubtitle {
+  text-align: center;
+  font-size: large;
+}
+
+.divcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

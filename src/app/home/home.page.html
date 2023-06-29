@@ -1,0 +1,81 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar class="toolbar">
+      <ion-title class="title" size="small"
+        >PET SHOP BOM PARA CACHORRO
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <!-- <img src="http://wallpapercave.com/wp/wp12146395.jpg" (imagem fixa na tela inicial) /> -->
+    <img src="{{imagem}}" width="380" height="300" />
+  </div>
+
+  <p class="cadastre">Cadastre seu Pet</p>
+  <p class="insira">Insira os dados do seu Pet</p>
+  <ion-row>
+    <ion-col size="4"></ion-col>
+    <ion-col size="4">
+      <form class="form">
+        <div class="flex">
+          <label position="floating">
+            <ion-input
+              required
+              placeholder="Nome"
+              type="text"
+              class="input"
+              style="width: 110px"
+              name="nome"
+              id="nome"
+              [(ngModel)]="pet.nome"
+            >
+            </ion-input>
+          </label>
+
+          <label>
+            <ion-input
+              required
+              placeholder="Idade"
+              type="number"
+              class="input"
+              style="width: 110px"
+              name="idade"
+              id="idade"
+              [(ngModel)]="pet.idade"
+            >
+            </ion-input>
+          </label>
+
+          <ion-row>
+            <ion-col size="3rem">
+              <ion-button
+                Custom
+                Button
+                size="default"
+                fill="outline"
+                shape="round"
+                expand="full"
+                class="botaoCadastrar"
+                (click)="salvandoPet()"
+                >{{LabelBotaoCadastrar}}</ion-button
+              >
+              <ion-button
+                Custom
+                Button
+                size="default"
+                fill="outline"
+                shape="round"
+                expand="full"
+                class="botaoConsultar"
+                (click)="consultarPet()"
+                >{{LabelBotaoConsultar}}</ion-button
+              >
+            </ion-col>
+          </ion-row>
+        </div>
+      </form>
+    </ion-col>
+    <ion-col> </ion-col>
+  </ion-row>
+</ion-content>

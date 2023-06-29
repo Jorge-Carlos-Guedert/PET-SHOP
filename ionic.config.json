@@ -1,0 +1,7 @@
+{
+  "name": "PETSHOP3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
